@@ -1,0 +1,8 @@
+<resources>
+    <string name="error_title">Error has been occurred</string>
+    <string name="error_reply">Reply</string>
+
+    <string name="error_empty_stub_title">Nothing found for your request</string>
+
+    <string name="query_hint">Input query</string>
+</resources>

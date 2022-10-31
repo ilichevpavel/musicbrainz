@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_title">Error has been occurred</string>
+    <string name="error_reply">Reply</string>
+
+    <string name="release_date_title">Release date: %s</string>
+</resources>
