@@ -20,13 +20,9 @@ internal enum class ReleaseType {
         fun valueOfIgnoreCase(value: String?): ReleaseType {
             if (value == null) return UNKNOWN
 
-            values().forEach {
-                if (it.name.compareTo(value, ignoreCase = true) == 0) {
-                    return it
-                }
-            }
-
-            return UNKNOWN
+            return values()
+                .firstOrNull { it.name.compareTo(value, ignoreCase = true) == 0 }
+                ?: UNKNOWN
         }
     }
 }

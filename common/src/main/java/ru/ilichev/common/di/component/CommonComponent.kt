@@ -7,10 +7,12 @@ import dagger.Component
 import dagger.Module
 import ru.ilichev.common.ResourceProvider
 import ru.ilichev.common.ResourceProviderImpl
+import javax.inject.Singleton
 
 @Component(
     modules = [CommonModule::class]
 )
+@Singleton
 interface CommonComponent : CommonApi {
 
     @Component.Builder
@@ -25,5 +27,6 @@ interface CommonComponent : CommonApi {
 internal abstract class CommonModule {
 
     @Binds
+    @Singleton
     internal abstract fun bindResourceProvider(impl: ResourceProviderImpl): ResourceProvider
 }
